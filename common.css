@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  font-size: 16px;
+  --mw: 1440px;
+  --gap1: 16px;
+  --gap2: 8px;
+  --col-1: #ffa902;
+  --col-2: #fcfcfc;
+  --col-3: #585656;
+}
+.mw {
+  max-width: var(--mw);
+  margin: auto;
+}
+
+/* header 영역 시작 */
+.hd > * {
+  border: 1px solid red;
+}
+.hd img {
+  width: 100%;
+}
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap2) 0;
+}
+.top_nav .logo {
+  width: 130px;
+  padding-left: 0.5rem;
+}
+.gnb {
+  flex-grow: 1;
+  margin-left: 8rem;
+  margin-top: 1.5rem;
+}
+.gnb a {
+  font-size: 1.5rem;
+  color: var(--col-3);
+  margin-right: 5rem;
+  position: relative;
+  transition: 0.3s;
+}
+.gnb a::before {
+  content: '';
+  background-color: var(--col-1);
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.gnb a:hover {
+  color: #000;
+}
+.gnb a:hover::before {
+  height: 2px;
+}
+.fun {
+  display: flex;
+  margin-top: 0.625rem;
+}
+.fun a {
+  padding: var(--gap1) var(--gap1) 0;
+}
+
+/* main 시작 */
+.sec1 > * {
+  border: 1px solid green;
+}
+.sec1 {
+  background-image: url(./images/banner_01완.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  border: 1px solid red;
+  padding: 12vw var(--gap1);
+  position: relative;
+}
+.slogan {
+  color: var(--col-2);
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.slogan_mobile {
+  display: none;
+}
+.slogan_sp {
+  color: var(--col-2);
+  font-size: 1.5rem;
+}
+.mobile {
+  display: none;
+}
+
+.btn_large {
+  position: absolute;
+  border-radius: 1rem;
+  background-color: var(--col-1);
+  color: var(--col-2);
+  border: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .gnb {
+    margin-left: 30px;
+  }
+  .gnb a {
+    margin-right: 3rem;
+  }
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+  }
+  .slogan {
+    font-size: 3rem;
+  }
+  .slogan_sp {
+    font-size: 1rem;
+  }
+  .btn_large {
+    font-size: 1rem;
+    padding: 1rem;
+    bottom: -2rem;
+  }
+}
+@media (max-width: 425px) {
+  .slogan_sp,
+  .slogan {
+    display: none;
+  }
+  .slogan_mobile {
+    color: var(--col-1);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    display: block;
+  }
+  .btn_large {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .sec1 {
+    background-image: url(./images/banner_mobile.png);
+    background-size: 120%;
+  }
+}
