@@ -16,6 +16,7 @@ body {
   --col-4: #38423c;
   --col-5: #efb6b6;
   --col-6: #ffdcdc;
+  --col-7: #e4e4e4;
 }
 .mw {
   max-width: var(--mw);
@@ -220,7 +221,7 @@ body {
 .bg {
   background-color: rgba(251, 227, 235, 26%);
 }
-.sec3_wrap{
+.sec3_wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -231,9 +232,6 @@ body {
   flex-direction: column;
   padding-top: 7vw;
 }
-.sec3 > * {
-  /* border: 2px solid green; */
-}
 .sec3_title {
   width: 100%;
   border-radius: 0.2rem;
@@ -243,7 +241,7 @@ body {
   position: relative;
 }
 .sec3_title::before {
-  content: "";
+  content: '';
   background-color: var(--col-3);
   width: 14rem;
   position: absolute;
@@ -261,7 +259,7 @@ body {
   height: 5rem;
 }
 .sec3_left {
-  width: 50%;  
+  width: 50%;
   padding-top: 4vw;
   padding-bottom: 14vw;
 }
@@ -315,8 +313,8 @@ body {
 .img1:hover::after {
   opacity: 1;
 }
-.img1::after{
-  content: "약,청주";
+.img1::after {
+  content: '약,청주';
   color: white;
   display: flex;
   justify-content: center;
@@ -339,7 +337,7 @@ body {
   opacity: 1;
 }
 .img2::after {
-  content: "탁주";
+  content: '탁주';
   color: white;
   display: flex;
   justify-content: center;
@@ -362,7 +360,7 @@ body {
   opacity: 1;
 }
 .img3::after {
-  content: "과실주";
+  content: '과실주';
   color: white;
   display: flex;
   justify-content: center;
@@ -385,7 +383,7 @@ body {
   opacity: 1;
 }
 .img4::after {
-  content: "증류주";
+  content: '증류주';
   color: white;
   display: flex;
   justify-content: center;
@@ -409,6 +407,131 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* sec4 */
+.sec4_title {
+  width: 100%;
+  border-radius: 0.2rem;
+  font-size: 2.25rem;
+  line-height: 1.5;
+  color: var(--col-3);
+  position: relative;
+  margin: 3vw 0;
+}
+.sec4_title::before {
+  content: '';
+  background-color: var(--col-3);
+  width: 14rem;
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+}
+.sec4_title::after {
+  content: '';
+  background-image: url(./images/술병4.png);
+  background-size: cover;
+  position: absolute;
+  top: -1.4rem;
+  left: 9rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Swiper */
+.reviewSwiper {
+  /* padding-left: 1.8rem; */
+}
+.review_wrap {
+  padding-bottom: 3vw;
+}
+.review_wrap > img {
+  width: 22vw;
+}
+.pd_detail {
+  padding: 2vw 0;
+}
+.pd_info1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.pd_info2 {
+  font-size: 0.75rem;
+}
+.pd_info3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 1vw;
+}
+.prev1 {
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  color: var(--col-4);
+}
+.next1 {
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  color: var(--col-4);
+}
+
+/* footer */
+.footer_bg {
+  background-color: var(--col-7);
+}
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10rem 1rem 1rem;
+}
+.companyName {
+  width: 15%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.footer_contents {
+  flex-grow: 1;
+  font-size: 0.6875rem;
+}
+.footer_contents p {
+  padding-bottom: 0.4rem;
+}
+.footer_contents p:nth-of-type(1) {
+  color: #585656;
+  line-height: 1.8;
+  padding-bottom: 1vw;
+  font-weight: bold;
+}
+.footer_contents span {
+  padding-left: 4rem;
+}
+.footer_right {
+  width: 30%;
+  font-size: 0.6875rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer_right p {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_right span {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.footer_right span:nth-of-type(1) {
+  color: var(--col-3);
+}
+.footer_right div {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_right img {
+  padding-left: 1.5rem;
+}
+
 /* 반응형 */
 @media (max-width: 1024px) {
   .gnb {
@@ -504,7 +627,7 @@ body {
   }
   .sec3_btn {
     font-size: 0.9rem;
-    padding: 0.6rem 1.2rem 0.6rem 1rem;;
+    padding: 0.6rem 1.2rem 0.6rem 1rem;
   }
   .sec3_title {
     margin-bottom: 2vw;
@@ -522,7 +645,7 @@ body {
   }
   .sec3 {
     margin-top: 10vw;
-  }  
+  }
 }
 @media (max-width: 425px) {
   .slogan_sp,
