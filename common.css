@@ -218,19 +218,29 @@ body {
 }
 
 /* sec3 */
-.bg {
-  background-color: rgba(251, 227, 235, 26%);
-}
-.sec3_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
+
 .sec3 {
   display: flex;
   flex-direction: column;
-  padding-top: 7vw;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  position: relative;
+  background-color: rgba(251, 227, 235, 26%);
+}
+.sec3::before,
+.sec3::after {
+  content: "";
+  /* background-color: rgba(251, 227, 235, 26%); */
+  background-color: rgba(251, 227, 235, 26%);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.sec3::after {
+  background-color: #rgba(251, 227, 235, 26%);
+  left: 100%;
 }
 .sec3_title {
   width: 100%;
@@ -239,6 +249,7 @@ body {
   line-height: 1.5;
   color: var(--col-3);
   position: relative;
+  margin-top: 4vw;
 }
 .sec3_title::before {
   content: '';
@@ -258,6 +269,12 @@ body {
   width: 5rem;
   height: 5rem;
 }
+.sec3_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
 .sec3_left {
   width: 50%;
   padding-top: 4vw;
@@ -267,14 +284,14 @@ body {
   color: var(--col-4);
   font-size: 1.2rem;
   line-height: 1.5;
-  padding-bottom: 2vw;
+  padding-bottom: 4vw;
 }
 .sec3_lp {
   color: var(--col-4);
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.5;
-  padding-bottom: 2.5vw;
+  padding-bottom: 3.5vw;
 }
 .sec3_lp strong {
   color: #ef6d7c;
@@ -410,13 +427,12 @@ body {
 
 /* sec4 */
 .sec4_title {
-  width: 100%;
   border-radius: 0.2rem;
   font-size: 2.25rem;
   line-height: 1.5;
   color: var(--col-3);
   position: relative;
-  margin: 3vw 0;
+  margin: 4vw 0 1vw 0; 
 }
 .sec4_title::before {
   content: '';
@@ -431,10 +447,10 @@ body {
   background-image: url(./images/술병4.png);
   background-size: cover;
   position: absolute;
-  top: -1.4rem;
-  left: 9rem;
-  width: 5rem;
-  height: 5rem;
+  top: -3rem;
+  left: 8rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 /* Swiper */
@@ -445,7 +461,7 @@ body {
   padding-bottom: 3vw;
 }
 .review_wrap > img {
-  width: 22vw;
+  width: 100%;
 }
 .pd_detail {
   padding: 2vw 0;
@@ -463,17 +479,11 @@ body {
   line-height: 1.5;
   padding-top: 1vw;
 }
-.prev1 {
-  left: 0;
-  top: 40%;
-  transform: translateY(-50%);
-  color: var(--col-4);
-}
+.prev1,
 .next1 {
-  right: 0;
   top: 40%;
   transform: translateY(-50%);
-  color: var(--col-4);
+  color: var(--col-7);
 }
 
 /* footer */
@@ -487,6 +497,7 @@ body {
 }
 .companyName {
   width: 15%;
+  min-width: 200px;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -507,10 +518,11 @@ body {
   padding-left: 4rem;
 }
 .footer_right {
-  width: 30%;
+  min-width: 350px;
   font-size: 0.6875rem;
   display: flex;
   flex-direction: column;
+  
 }
 .footer_right p {
   display: flex;
@@ -533,6 +545,11 @@ body {
 }
 
 /* 반응형 */
+@media (max-width: 1400px) {
+  .footer_wrap {
+    padding: 1rem;
+  }
+}
 @media (max-width: 1024px) {
   .gnb {
     margin-left: 30px;
@@ -576,10 +593,10 @@ body {
     font-size: 1.5rem;
   }
   .sec3_title::after {
-    top: -2rem;
+    top: -1rem;
     left: 6rem;
-    width: 4rem;
-    height: 4rem;
+    width:3rem;
+    height: 3rem;
   }
   .sec3_title::before {
     width: 10rem;
@@ -599,6 +616,48 @@ body {
   .sec3_btn {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem 0.6rem 1rem;
+  }
+  .sec4_title {
+    font-size: 1.5rem;
+  }
+  .sec4_title::after {
+    top: -1.6rem;
+    left: 5.7rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .sec4_title::before {
+    width: 10rem;
+  }
+  
+  .pd_info1 {
+    font-size: 1.2rem;
+  }
+  .pd_info3 {
+    font-size: 1rem;
+  }
+  .footer_wrap {
+    flex-direction: column;
+  }
+  .companyName {
+  padding-bottom: 1vw;
+  }
+  .footer_right p {
+    justify-content: flex-start;
+  }
+  .footer_right {
+    padding-top: 1vw;
+  }
+  .footer_right span {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .footer_right div {
+    justify-content: flex-start;
+  }
+  .footer_right img {
+    padding-left: 0;
+    padding-right: 1.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -646,6 +705,12 @@ body {
   .sec3 {
     margin-top: 10vw;
   }
+  .prev1,
+  .next1 {
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--col-7);
+  }  
 }
 @media (max-width: 425px) {
   .slogan_sp,
