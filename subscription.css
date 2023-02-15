@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url(./header.css);
+@import url(./footer.css);
+
+body {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  font-size: 16px;
+  --mw: 1440px;
+  --gap1: 16px;
+  --gap2: 8px;
+  --col-1: #ffa902;
+  --col-2: #fcfcfc;
+  --col-3: #585656;
+  --col-4: #38423c;
+  --col-5: #efb6b6;
+  --col-6: #ffdcdc;
+  --col-7: #e4e4e4;
+}
+.mw {
+  max-width: var(--mw);
+  margin: auto;
+  width: calc(100% - 2rem);
+}
+
+/* main */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd_wrap {
+  padding-top: 3vw;
+  border: 1px solid red;
+  display: flex;
+}
+.pdSwiper {
+  border: 1px solid red;
+  width: 25vw;
+}
+.pdSwiper img {
+  width: 100%;
+}
+.pd_detail {
+  width: 50%;
+}
+.box_choice {
+  display: flex;
+}
