@@ -3,24 +3,19 @@ let swiper = new Swiper('.reviewSwiper', {
     nextEl: '.next1',
     prevEl: '.prev1',
   },
-  slidesPerView: 1,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   grabCursor: true,
   breakpoints: {
     768: {
-      slidesPerView: 2,
-    },
-    1024: {
       slidesPerView: 3,
+    },
+    1435: {
+      slidesPerView: 5,
     },
   },
 });
-
-// $('.btn_gotop').click(function () {
-//   $('html, body').animate({ scrollTop: 0 }, 400);
-//   return false;
-// });
 
 let swiper2 = new Swiper('.pdSwiper', {
   spaceBetween: 30,

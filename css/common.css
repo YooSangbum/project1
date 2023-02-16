@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Black Han Sans', sans-serif;
   font-family: 'Inter', sans-serif;
@@ -76,7 +80,7 @@ body {
 /* main 시작 */
 /* sec1 */
 .sec1 {
-  background-image: url(./images/banner_01완.png);
+  background-image: url(../images/banner_01완.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -122,7 +126,7 @@ body {
 .sec2::before {
   content: '';
   position: absolute;
-  background-image: url(./images/벚꽃2.png);
+  background-image: url(../images/벚꽃2.png);
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(180deg);
@@ -136,7 +140,7 @@ body {
 .sec2::after {
   content: '';
   position: absolute;
-  background-image: url(./images/벚꽃2.png);
+  background-image: url(../images/벚꽃2.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 300px;
@@ -155,7 +159,7 @@ body {
 }
 .sec2_title::after {
   content: '';
-  background-image: url(./images/술병1.png);
+  background-image: url(../images/술병1.png);
   background-size: cover;
   position: absolute;
   top: -2.3rem;
@@ -239,7 +243,7 @@ body {
   height: 100%;
 }
 .sec3::after {
-  background-color: #rgba(251, 227, 235, 26%);
+  background-color: rgba(251, 227, 235, 26%);
   left: 100%;
 }
 .sec3_title {
@@ -261,7 +265,7 @@ body {
 }
 .sec3_title::after {
   content: '';
-  background-image: url(./images/술병2.png);
+  background-image: url(../images/술병2.png);
   background-size: cover;
   position: absolute;
   top: -1.8rem;
@@ -426,6 +430,9 @@ body {
 }
 
 /* sec4 */
+.sec4 {
+  position: relative;
+}
 .sec4_title {
   border-radius: 0.2rem;
   font-size: 2.25rem;
@@ -444,7 +451,7 @@ body {
 }
 .sec4_title::after {
   content: '';
-  background-image: url(./images/술병4.png);
+  background-image: url(../images/술병4.png);
   background-size: cover;
   position: absolute;
   top: -3rem;
@@ -482,10 +489,14 @@ body {
 .prev1,
 .next1 {
   top: 40%;
-  transform: translateY(-50%);
-  color: var(--col-7);
+  color: var(--col-1);
 }
-
+.prev1 {
+  left: -40px;
+}
+.next1 {
+  right: -40px;
+}
 /* footer */
 .footer_bg {
   background-color: var(--col-7);
@@ -547,7 +558,7 @@ body {
   position: fixed;
   bottom: 60px;
   right: 30px;
-  /* z-index: 999; */
+  z-index: 999;
   border: 1px solid var(--col-1);
   background-color: var(--col-2);
   color: var(--col-1);
@@ -557,6 +568,24 @@ body {
 }
 
 /* 반응형 */
+@media (max-width: 1550px) {
+  .prev1,
+  .next1 {
+    top: 3rem;
+  }
+  .prev1 {
+    left: auto;
+    right: 1.5rem;
+  }
+  .next1 {
+    right: 0;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1400px) {
   .footer_wrap {
     padding: 1rem;
@@ -671,6 +700,10 @@ body {
     padding-left: 0;
     padding-right: 1.5rem;
   }
+  .prev1,
+  .next1 {
+    top: 1.5rem;
+  }
 }
 @media (max-width: 768px) {
   .gnb {
@@ -717,12 +750,6 @@ body {
   .sec3 {
     margin-top: 10vw;
   }
-  .prev1,
-  .next1 {
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--col-7);
-  }
 }
 @media (max-width: 425px) {
   .slogan_sp,
@@ -741,7 +768,7 @@ body {
     padding: 1rem;
   }
   .sec1 {
-    background-image: url(./images/banner_mobile.png);
+    background-image: url(../images/banner_mobile.png);
     background-size: 120%;
   }
   .sec3_title {

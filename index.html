@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>술담화</title>
-    <link rel="stylesheet" href="./my_reset.css" />
+    <link rel="stylesheet" href="./css/my_reset.css" />
     <!-- 구글폰트 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -24,13 +24,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="./css/common.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./index.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <header class="hd">
+    <header class="hd" id="pagetop">
       <nav class="mw top_nav">
         <h1 class="logo">
           <a href="./index.html"
@@ -228,9 +228,9 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next next1"></div>
-          <div class="swiper-button-prev prev1"></div>
         </div>
+        <div class="swiper-button-next next1"></div>
+        <div class="swiper-button-prev prev1"></div>
         <!-- <div class="review_wrap mw">
           <img src="./images/상품3.jpg" alt="상품3" />
           <div class="pd_detail">
@@ -288,7 +288,9 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn_gotop"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#pagetop" class="btn_gotop"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
     </footer>
   </body>
 </html>
