@@ -3,9 +3,12 @@ let swiper = new Swiper('.reviewSwiper', {
     nextEl: '.next1',
     prevEl: '.prev1',
   },
+  pagination: {
+    el: '.swiper-pagination',
+  },
   slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
+  // loop: true,
   grabCursor: true,
   breakpoints: {
     768: {
