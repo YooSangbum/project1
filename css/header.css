@@ -28,6 +28,7 @@ body {
   width: 100%;
 }
 .top_nav {
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,4 +71,19 @@ body {
 }
 .fun a {
   padding: var(--gap1) var(--gap1) 0;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .gnb {
+    margin-left: 30px;
+  }
+  .gnb a {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+  }
 }
