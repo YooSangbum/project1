@@ -1,4 +1,4 @@
-# <img src=./images/sooldamhwa_logo.png width="400px">
+# <img src=https://raw.githubusercontent.com/YooSangbum/project1/master/readme_img/sooldamhwa_logo.png width="200px">
 
 ## 술담화\_리뉴얼
 
@@ -27,11 +27,9 @@
 
 > https://docs.google.com/presentation/d/1sk3Ztypy4TUWd38GX3Doyaa2wZbujd7dWG24v442WVY/edit#slide=id.p
 
----
+## <img src=https://raw.githubusercontent.com/YooSangbum/project1/master/readme_img/image.png width=600px>
 
 ### 메인, 서브, 모바일 - 시안 or 화면 설게 와이어프레임 (링크)
-
-<br/>
 
 #### 와이어프레임
 
@@ -41,4 +39,8 @@
 
 > https://www.figma.com/file/1fum7XkMN3636BSb1BH5Bh/%EC%9C%A0%EC%83%81%EB%B2%94_%EC%88%A0%EB%8B%B4%ED%99%94?node-id=0%3A1&t=ICUlyLjGlDFfsiFi-1
 
----
+<img src=https://raw.githubusercontent.com/YooSangbum/project1/master/readme_img/index%EC%8B%9C%EC%95%88.jpg width=200px>
+
+#### 스타일가이드
+
+<img src=https://raw.githubusercontent.com/YooSangbum/project1/master/readme_img/%EC%9C%A0%EC%83%81%EB%B2%94_%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B0%80%EC%9D%B4%EB%93%9C.jpg width=200px>
