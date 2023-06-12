@@ -44,7 +44,6 @@ body {
   width: 55%;
 }
 .pd_detail > * {
-  border: 1px solid red;
   padding-bottom: 1rem;
 }
 .pBox > p:nth-of-type(1) {
@@ -61,6 +60,7 @@ body {
 }
 .option {
   display: flex;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .option span,
@@ -110,17 +110,18 @@ body {
 }
 
 .price {
+  padding: 1rem 0;
   font-size: 1.2rem;
   color: var(--col-8);
 }
 
 .choiceBox {
-  width: 30%;
+  width: 32%;
   display: flex;
 }
 .choiceBox p {
   padding: 1rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fae7c3;
 }
 .choiceBox p:nth-of-type(1) {
